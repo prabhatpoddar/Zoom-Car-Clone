@@ -1,13 +1,46 @@
-/* body{
-  overflow: hidden;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================midile section============================= */
+#main-container{
+  background-color: whitesmoke;
+}
 * {
   padding: 0;
   margin: 0;
 }
 
 #nav {
-  border: 1px solid black;
   height: 50px;
   display: grid;
   grid-template-columns: 20% 80%;
@@ -44,7 +77,7 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 100%;
-  border: .1px solid black;
+  border: 0.1px solid transparent;
 }
 .search {
   padding: 16px;
@@ -57,57 +90,115 @@
   font-size: 20px;
   padding: 10px;
   border-radius: 5px;
-  
-  
+  border: none;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 #form > input:nth-child(2) {
   width: 94%;
-  margin: 10px 0 10px 0;
+  margin: 20px 0 20px 0;
   font-size: 16px;
 }
-#form span{
+#form span {
   font-size: 20px;
   color: green;
   font-weight: bold;
 }
 /* =============================================top section end========================================= */
 
-.after-top{
+.after-top {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: 80%;
-  margin: auto;
-  border: 1px solid pink;
-  border: 1px solid pink;
 
-
+  gap: 30px;
+  margin: 50px auto 50px auto;
 }
-.after-top>div{
+.after-top > div:nth-child(1) {
   display: grid;
   grid-template-rows: 80% 20%;
-  border: 1px solid pink;
-
-
-
 }
-.after-top>div>div{
+.after-top > div > div {
   display: grid;
   grid-template-columns: 60% 40%;
   padding: 10px;
-  border: 1px solid pink;
-
-
-
-
-
 }
-.after-top>div>div>div{
+.after-top > div {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.after-top > div > div:nth-child(1) {
+  border-bottom: 1px solid gainsboro;
+  line-height: 30px;
+}
+.after-top > div > div:nth-child(1) h3 {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.after-top > div > div:nth-child(1) p {
+  font-size: 15px;
+  margin-top: 20px;
+  width: 70%;
+}
+.after-top > div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+.after-top > div > div:nth-child(2) p {
+  font-size: 20px;
+  font-weight: bold;
+}
+.after-top > div > div:nth-child(2) span {
+  color: green;
+  padding: 10px;
+  margin: 15px;
+}
 
+.after-top > div > div > div {
   padding: 15px;
 }
-.after-top img{
+.after-top img {
   width: 100%;
 }
-#after-s-div{
-  
+#after-s-div {
+  display: grid;
+  grid-template-columns: 70% 30%;
 }
+#after-s-div > div:nth-child(2) > img {
+  width: 100%;
+}
+#after-s-div > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#after-s-div > div:nth-child(1) {
+  display: inline;
+  line-height: 60px;
+  padding: 40px;
+}
+#after-s-div > div:nth-child(1) > span {
+  border: 1px dashed black;
+  padding: 15px 20px 15px 20px;
+}
+#after-s-div > div:nth-child(1) > p {
+  font-size: 20px;
+  font-weight: bold;
+  width: 110%;
+}
+#after-s-div > div:nth-child(1) > p:nth-child(4) {
+  color: green;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 30px;
+  width: 120%;
+}
+#after-s-div > div:nth-child(1) > h3 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+
+
