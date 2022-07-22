@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+
+    <title>login</title>
+  </head>
+  <body>
+    <div id="main_container">
+      <div>
+        <img
+          src="	https://www.zoomcar.com/build/fb65fcc43b8bededb813e093ea2d47d3.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <h3>Enter details to login/sign-up</h3>
+        <div id="number">
+          <div>
+            <img
+              src="	https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648
+              "
+              alt=""
+            />
+            <h3>+91</h3>
+          </div>
+          <div>Enter Mobile Number</div>
+        </div>
+        <div id="email">Continue with Email ID</div>
+        <div id="social">
+          Continue via Social
+          <span
+            ><img
+              src="	https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg"
+              alt=""
+          /></span>
+
+          <span
+            ><img
+              src="	https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg
+                    "
+              alt=""
+          /></span>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#number").addEventListener("click", function(){
+      window.location="loginpage1.html"
+    })
+
+    document.querySelector("#email").addEventListener("click", function(){
+      window.location="loginemail.html"
+    })
+
+    document.querySelector("#social").addEventListener("click", function(){
+      window.location="loginSocial.html"
+    })
+    
+  </script>
+</html>

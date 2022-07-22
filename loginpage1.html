@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .maincontainer {
+        display: grid;
+        grid-template-rows: 90% 10%;
+        height: 90vh;
+      }
+      #info {
+        width: 568px;
+        margin: auto;
+        height: 90vh;
+      }
+      #info > div:nth-child(1) {
+        height: 20px;
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+      }
+      #info > div:nth-child(2) {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        color: #1f1f1f;
+        font-size: 18px;
+        font-weight: 600;
+      }
+      #info > div:nth-child(3) {
+        height: auto;
+      }
+
+      #input {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 40px;
+      }
+      #input > div {
+        display: flex;
+        height: 47px;
+        width: 117px;
+        border: 2px solid #10a310;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+      }
+      #input > div > h3 {
+        color: #1f1f1f;
+        font-weight: 400;
+      }
+      #input > div > img {
+        width: 32px;
+        margin: 0 4px;
+      }
+      #mobile {
+        width: 439.47px;
+        border: 2px solid #10a310;
+        outline: none;
+        margin-left: 10px;
+        padding: 16px 12px;
+        color: #666;
+        border-radius: 4px;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      #submit {
+        width: 460px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #10a310;
+        padding: 12px 16px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div id="info">
+        <div id="back">🡐</div>
+        <div>Enter Mobile Number</div>
+        <div id="input">
+          <div>
+            <img
+              src="	https://zoomcar-assets.zoomcar.com/images/original/38ff9c58fe221677b6e8958c1caba43d35710fe2.png?1654779648
+                    "
+              alt=""
+            />
+            <h3>+91</h3>
+          </div>
+          <input type="number" id="mobile" placeholder="Mobile Number" />
+        </div>
+      </div>
+      <div id="submit">CONTINUE</div>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#back").addEventListener("click", function(){
+      window.location="login.html"
+    })
+  </script>
+</html>

@@ -1,0 +1,61 @@
+#main_container {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+#main_container > div {
+  width: 420px;
+  margin: auto;
+  padding: 10px;
+}
+#main_container > div > img {
+  width: 100%;
+}
+#main_container > div>h3{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 16px 0 24px 0;
+    color: #1f1f1f;
+}
+#number {
+  display: flex;
+  gap: 25px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+}
+#number > div {
+  display: flex;
+  align-items: center;
+}
+#number > div img {
+  width: 60%;
+}
+#number > div:nth-child(1) {
+  width: 10%;
+  height: 10%;
+  padding: 0 15px 0 0;
+}
+#number > div:nth-child(2) {
+    color: #666;
+    padding-left: 8px;
+    border-left: 1px solid #e0e0e0;
+    font-weight: 400;
+}
+
+#number > div:nth-child(1)>h3{
+    color: #1f1f1f;
+    font-weight: 400;
+}
+#email {
+  padding: 15px 0 15px 0;
+  border-bottom: 1px solid gainsboro;
+  border-top: 1px solid gainsboro;
+  color: #10a310;
+}
+#social {
+  display: flex;
+  align-items: center;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid gainsboro;
+  color: #10a310;
+  gap: 15px;
+}
