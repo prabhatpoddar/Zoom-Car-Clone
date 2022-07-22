@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      #info > div {
+        height: 50px;
+        width: 40%;
+        margin: auto;
+      }
+      #info > div:nth-child(2) {
+        font-size: 18px;
+        font-weight: 600;
+        color: #1f1f1f;
+        letter-spacing: 0.16px;
+      }
+      #info > div:nth-child(1) {
+        font-size: 24px;
+        font-weight: 600;
+        color: #1f1f1f;
+        letter-spacing: 0.16px;
+        margin-top: 16px;
+      }
+      #info > div:nth-child(3) {
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .social {
+        display: flex;
+        align-items: center;
+      }
+      .social > h1 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: 0.24px;
+        color: #1f1f1f;
+        padding-left: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maincontainer">
+      <div id="info">
+        <div id="back">🡐</div>
+        <div>Choose An Account</div>
+        <div class="social" id="so1">
+          <span
+            ><img
+              src="	https://www.zoomcar.com/build/62ba375ec1a9fbcbee9e9099181c8d38.svg"
+              alt=""
+          /></span>
+          <h1>Facebook</h1>
+        </div>
+        <div class="social" id="so2">
+          <span
+            ><img
+              src="	https://www.zoomcar.com/build/279de03b0c8ecdb4db56a79da6e775e6.svg
+                    "
+              alt=""
+          /></span>
+          <h1>Google</h1>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector("#back").addEventListener("click", function () {
+      window.location = "login.html";
+    });
+
+    document.querySelector("#so1").addEventListener("click", function () {
+      window.location = "https://www.facebook.com/login/.com";
+    });
+
+    document.querySelector("#so2").addEventListener("click", function () {
+      window.location =
+        "https://accounts.google.com/signin/v2/identifier?service=mail&passive=1209600&osid=1&continue=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&followup=https%3A%2F%2Fmail.google.com%2Fmail%2Fu%2F0%2F&emr=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin.com";
+    });
+  </script>
+</html>
