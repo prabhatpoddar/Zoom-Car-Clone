@@ -97,6 +97,7 @@
   grid-template-columns: 1fr 1fr;
   width: 80%;
 
+
   gap: 30px;
   margin: 50px auto 50px auto;
 }
@@ -165,8 +166,11 @@
   padding: 40px;
 }
 #after-s-div > div:nth-child(1) > span {
-  border: 1px dashed black;
+  border: 1px dashed #b9b6b6;
   padding: 15px 20px 15px 20px;
+  color: #b9b6b6;
+  font-size: 14px;
+  font-weight: bold;
 }
 #after-s-div > div:nth-child(1) > p {
   font-size: 20px;
@@ -192,7 +196,7 @@
 }
 #offer {
   width: 80%;
-  margin: auto;
+  margin: 50px auto 50px auto;
 }
 #offer img {
   width: 100%;
@@ -220,6 +224,9 @@
   line-height: 1.5;
   color: #1f1f1f;
   font-size: 12px;
+  letter-spacing: 0.24px;
+
+  
 }
 #abody div {
   margin-top: 10px;
@@ -240,8 +247,33 @@
 }
 
 @media all and (min-width: 401px) and (max-width: 800px) {
+
+  .px800{
+    display: none;
+  }
+  .after-top{
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+  }
+  #middle_section>div{
+    width: 100%;
+  }
+  
 }
 /* Small screens */
 
+
 @media all and (min-width: 100px) and (max-width: 400px) {
+  .px800{
+    display: none;
+  }
+  .after-top{
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+  }
+  #middle_section>div{
+    width: 100%;
+  }
 }
